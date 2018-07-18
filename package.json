@@ -1,0 +1,29 @@
+{
+  "name": "FantasticQrCodeReader",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "react": "16.4.1",
+    "react-native": "0.56.0",
+    "react-native-action-button": "^2.8.4",
+    "react-native-camera": "^1.1.4",
+    "react-native-elements": "^0.19.1",
+    "react-native-qrcode": "^0.2.6",
+    "react-native-vector-icons": "^4.6.0",
+    "react-navigation": "^2.6.2",
+    "recompose": "^0.27.1"
+  },
+  "devDependencies": {
+    "babel-jest": "23.4.0",
+    "babel-preset-react-native": "^5",
+    "jest": "23.4.1",
+    "react-test-renderer": "16.4.1"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
