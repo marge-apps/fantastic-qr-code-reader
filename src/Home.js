@@ -2,13 +2,14 @@ import React from 'react';
 import {
 	Alert,
 	AsyncStorage,
+	StatusBar,
 	StyleSheet,
 	Text,
-	View,
+	TextInput,
+	ToastAndroid,
 	TouchableHighlight,
 	TouchableOpacity,
-	TextInput,
-	ToastAndroid
+	View
 } from 'react-native';
 import {compose, withStateHandlers, withProps, lifecycle} from 'recompose';
 import ActionButton from 'react-native-action-button';
@@ -16,7 +17,7 @@ import IonIcon from 'react-native-vector-icons/Ionicons';
 import {createStackNavigator} from 'react-navigation';
 import {withCameraPermissionsAndResultNavigator, withStorageHandlers} from './enhancers'
 import {Camera, Result, QrList} from './components'
-import styles, {purple, gray} from './styles'
+import styles, {purple, gray, statusColor} from './styles'
 
 const App = props => (
 	<View style={styles.container}>
@@ -37,6 +38,7 @@ const enhanceWithStateHandlers = withStateHandlers(
 		cameraPermission: false,
 		barcodeResult: '',
 		isModalVisible: false,
+		isLoading: false,
 		list: []
 	}),
 	{
@@ -46,6 +48,7 @@ const enhanceWithStateHandlers = withStateHandlers(
 			isModalVisible: false
 		}),
 		toggleModal: ({isModalVisible}) => () =>  ({isModalVisible: !isModalVisible}),
+		setLoading: () => value => ({isLoading: value}),
 		setBarcodeResult: () => value => ({barcodeResult: value}),
 		setCameraPermission: () => value => ({cameraPermission: value}),
 		setList: () => list => ({list}),
@@ -64,8 +67,10 @@ const enhanceWithStateHandlers = withStateHandlers(
 
 const initializeList = lifecycle({
 	async componentDidMount() {
+		this.props.setLoading(true)
 		const history = await this.props.getHistory()
 		this.props.setList(history)
+		this.props.setLoading(false)
 	}
 })
 
@@ -81,11 +86,11 @@ const EnhancedApp = compose(
 	withCameraPermissionsAndResultNavigator
 )(App);
 
-export default createStackNavigator({
+const StackNavigator = createStackNavigator({
 	Home: {
 		screen: EnhancedApp,
 		navigationOptions: {
-			title: 'Fantastic QR Code Scanner',
+			title: 'History',
 			headerTitleStyle: {
 				width: '100%'
 			},
@@ -105,7 +110,8 @@ export default createStackNavigator({
 		})
 	},
 	Result: {
-		screen: Result
+		screen: Result,
+		title: 'View'
 	},
 },
 {
@@ -123,3 +129,10 @@ export default createStackNavigator({
 		}
 	}
 });
+
+export default () => (
+	<View style={{flex: 1}}>
+		<StatusBar backgroundColor={statusColor} barStyle="light-content"/>
+		<StackNavigator />
+	</View>
+);

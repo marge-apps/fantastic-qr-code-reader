@@ -11,7 +11,6 @@ export default withProps(props => ({
 					'message': 'message'
 				}
 			)
-			alert(granted)
 			if (granted === PermissionsAndroid.RESULTS.GRANTED) {
 				props.navigation.navigate('Camera', {
 					onNavigateBack: props.updateHistory(),

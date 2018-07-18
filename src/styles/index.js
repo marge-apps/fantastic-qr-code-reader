@@ -4,6 +4,7 @@ import {
 
 export const purple = '#4B0082';
 export const gray = '#cccccc';
+export const statusColor = '#2c004d';
 
 const styles = StyleSheet.create({
 	container: {
