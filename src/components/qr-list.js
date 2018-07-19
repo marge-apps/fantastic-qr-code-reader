@@ -94,7 +94,7 @@ const Empty = () => (
 		flex: 1,
 		alignItems: 'center'
 	}}>
-	<View style={{padding: 40}}>
+	<View style={{paddingTop: 40, paddingBottom: 20}}>
 		<Icon
 			name="list"
 			type="entypo"
@@ -104,7 +104,7 @@ const Empty = () => (
 	<Text style={{fontSize: 26}}>
 		No history
 	</Text>
-	<Text>
+	<Text style={{paddingTop: 8}}>
 		You could start adding by tapping the camera button.
 	</Text>
 </View>
