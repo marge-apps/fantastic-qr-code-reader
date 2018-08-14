@@ -17,7 +17,7 @@ import {
 	lifecycle
 } from 'recompose';
 import Icon from 'react-native-vector-icons/Ionicons';
-import { RNCamera } from 'react-native-camera';
+import {RNCamera} from 'react-native-camera';
 import {withResultPageHandlers} from '../enhancers';
 import styles from '../styles'
 

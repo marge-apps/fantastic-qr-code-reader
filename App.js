@@ -1,4 +1,4 @@
 import React from 'react';
-import {Home} from './src'
+import App from './src'
 
-export default Home;
+export default App;
