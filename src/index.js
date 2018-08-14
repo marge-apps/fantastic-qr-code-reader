@@ -1,7 +1,9 @@
 import React from 'react';
 import {
 	StatusBar,
-	View
+	TouchableOpacity,
+	View,
+	Text
 } from 'react-native';
 import {compose, withStateHandlers, withProps, lifecycle} from 'recompose';
 import ActionButton from 'react-native-action-button';
@@ -13,9 +15,7 @@ import styles, {purple, statusColor} from './styles'
 
 const App = props => (
 	<View style={styles.container}>
-		<QrList
-			{...props}
-		/>
+		<QrList {...props}/>
 		<ActionButton
 			buttonColor={purple}
 			title="Scan"
@@ -50,7 +50,7 @@ const StackNavigator = createStackNavigator({
 	Home: {
 		screen: EnhancedApp,
 		navigationOptions: {
-			title: 'History',
+			title: 'Fantastic Qr Code Reader',
 			headerTitleStyle: {
 				width: '100%'
 			},
@@ -59,14 +59,7 @@ const StackNavigator = createStackNavigator({
 	Camera: {
 		screen: Camera,
 		navigationOptions: props => ({
-			title: 'Camera',
-			headerRight: (
-				<TouchableOpacity
-					style={{paddingRight: 16}}
-					onPress={props.navigation.state.params.toggleFlash}>
-					<IonIcon name="md-flash" style={styles.actionButtonIcon} />
-				</TouchableOpacity>
-			)
+			title: 'Camera'
 		})
 	},
 	Result: {

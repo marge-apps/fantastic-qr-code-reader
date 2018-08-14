@@ -1,21 +1,6 @@
 import React from 'react';
-import {
-	Dimensions,
-	StatusBar,
-	LayoutAnimation,
-	StyleSheet,
-	Text,
-	Button,
-	TouchableOpacity,
-	View
-} from 'react-native';
-import {
-	compose,
-	withLifecycle,
-	withStateHandlers,
-	withProps,
-	lifecycle
-} from 'recompose';
+import {TouchableOpacity} from 'react-native';
+import {compose, withStateHandlers} from 'recompose';
 import Icon from 'react-native-vector-icons/Ionicons';
 import {RNCamera} from 'react-native-camera';
 import {withResultPageHandlers} from '../enhancers';
@@ -33,18 +18,22 @@ const CameraPage = props => (
 		style={{
 			flex: 1,
 		}}>
+		<TouchableOpacity
+			style={{
+				padding: 50,
+				marginTop: 'auto',
+				alignSelf: 'flex-end'
+			}}
+			onPress={props.toggleFlash}>
+			<Icon name="md-flash" style={{
+				color: 'white',
+				fontSize: 35
+			}} />
+		</TouchableOpacity>
 	</RNCamera>
 );
 
-const withFlashHandler = lifecycle({
-	componentWillMount() {
-		this.props.navigation.setParams({
-			toggleFlash: this.props.toggleFlash
-		})
-	}
-})
-
-const stateOfCamera = withStateHandlers(
+const withCameraHandlers = withStateHandlers(
 	() => ({
 		barcodeResult: '' ,
 		flash: 'off'
@@ -56,7 +45,6 @@ const stateOfCamera = withStateHandlers(
 );
 
 export default compose(
-	stateOfCamera,
-	withResultPageHandlers,
-	withFlashHandler
+	withCameraHandlers,
+	withResultPageHandlers
 )(CameraPage)
