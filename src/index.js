@@ -8,7 +8,7 @@ import {
 import {compose, withStateHandlers, withProps, lifecycle} from 'recompose';
 import ActionButton from 'react-native-action-button';
 import IonIcon from 'react-native-vector-icons/Ionicons';
-import {createStackNavigator} from 'react-navigation';
+import {DrawerActions, createStackNavigator, createDrawerNavigator} from 'react-navigation';
 import {withHomePageStateHandlers, withCameraPermissionsAndResultNavigator, withStorageHandlers} from './enhancers'
 import {Camera, Result, QrList} from './components'
 import styles, {purple, statusColor} from './styles'
@@ -46,42 +46,66 @@ const EnhancedApp = compose(
 	withCameraPermissionsAndResultNavigator
 )(App);
 
-const StackNavigator = createStackNavigator({
+// const AppWithHeader = {
+// 	Home: {
+// 		screen: createStackNavigator({screen:})
+// 	}
+// }
+const routes = {
 	Home: {
-		screen: EnhancedApp,
-		navigationOptions: {
+		screen: createDrawerNavigator({
+			Home: {
+				screen: EnhancedApp
+			}
+		}, {
+			navigationOptions: {
+				title: 'Home',
+				drawerLabel: 'Home',
+				headerTitleStyle: purple,
+				headerTintColor: purple
+			}
+		}),
+		navigationOptions: props => ({
 			title: 'Fantastic Qr Code Reader',
+			headerLeft:
+			<TouchableOpacity onPress={() => {props.navigation.dispatch(DrawerActions.toggleDrawer())} }>
+				<IonIcon name="md-menu" style={styles.menuButton}/>
+			</TouchableOpacity>,
 			headerTitleStyle: {
 				width: '100%'
 			},
-		}
+		})
 	},
 	Camera: {
 		screen: Camera,
-		navigationOptions: props => ({
+		navigationOptions: {
 			title: 'Camera'
-		})
+		}
 	},
 	Result: {
 		screen: Result,
-		title: 'View'
-	},
-},
-{
-	navigationOptions: {
-		title: 'Camera',
-		headerStyle: {
-			backgroundColor: purple,
-		},
-		headerTintColor: '#fff',
-		headerTitleStyle: {
-			fontWeight: 'bold',
-		},
-		headerTitleStyle: {
-			width: '100%'
+		navigationOptions: {
+			title: 'View'
 		}
 	}
-});
+};
+
+const StackNavigator = createStackNavigator(
+	routes, {
+		navigationOptions: {
+			headerStyle: {
+				backgroundColor: purple,
+			},
+			headerTintColor: '#fff',
+			headerTitleStyle: {
+				fontWeight: 'bold',
+			},
+			headerTitleStyle: {
+				width: '100%'
+			}
+		}
+	}
+);
 
 export default () => (
 	<View style={{flex: 1}}>

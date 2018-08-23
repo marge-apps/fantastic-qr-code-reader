@@ -7,6 +7,11 @@ export const gray = '#cccccc';
 export const statusColor = '#2c004d';
 
 const styles = StyleSheet.create({
+	menuButton: {
+		color: 'white',
+		paddingLeft: 10,
+		fontSize: 26,
+	},
 	container: {
 		flex: 1,
 		backgroundColor: '#fff',

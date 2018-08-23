@@ -7,8 +7,8 @@ import {withResultPageHandlers} from '../enhancers';
 import styles from '../styles'
 
 const flashModeOrder = {
-  off: 'torch',
-  torch: 'off',
+	off: 'torch',
+	torch: 'off'
 };
 
 const CameraPage = props => (
