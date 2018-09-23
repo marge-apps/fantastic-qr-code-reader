@@ -63,14 +63,15 @@ const MyListItem = props => (
 			borderBottomWidth: 1,
 			paddingBottom: 12,
 			paddingTop: 12,
+			paddingTop: 12,
 			display: 'flex',
 		}}>
-		<View style={{paddingLeft: 6}}>
+		<View style={{paddingLeft: 18}}>
 			<Text style={{fontWeight: 'bold', color: 'black', fontSize: 15}}>
 				{props.title}
 			</Text>
 		</View>
-		<View style={{paddingLeft: 6}}>
+		<View style={{paddingLeft: 18}}>
 			<CreationTime niceDate={props.niceDate} id={props.id}/>
 		</View>
 	</TouchableOpacity>
