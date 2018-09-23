@@ -1,11 +1,10 @@
 import React from 'react';
-import {TouchableOpacity, View, Text} from 'react-native';
+import {TouchableOpacity} from 'react-native';
 import {compose, withStateHandlers} from 'recompose';
 import Icon from 'react-native-vector-icons/Ionicons';
 import {RNCamera} from 'react-native-camera';
 import MenuDrawer from './MenuDrawer'
 import {withResultPageHandlers} from '../enhancers';
-import styles from '../styles'
 
 const flashModeOrder = {
 	off: 'torch',

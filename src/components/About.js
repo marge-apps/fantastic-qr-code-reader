@@ -1,7 +1,6 @@
 import React from 'react'
-import {withProps} from 'recompose';
 import {Text, View, Image, Linking} from 'react-native'
-import styles, {purple, orange} from '../styles';
+import styles, {orange} from '../styles';
 import MenuDrawer from './MenuDrawer';
 import marge from '../../marge-logo-big.png';
 

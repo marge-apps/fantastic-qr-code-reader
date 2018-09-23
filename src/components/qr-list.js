@@ -2,10 +2,10 @@ import React from 'react';
 import {lifecycle, compose, branch, withProps, renderComponent} from 'recompose';
 import ActionButton from 'react-native-action-button';
 import Icon from 'react-native-vector-icons/Ionicons';
-import {List, Appbar, Divider} from 'react-native-paper'
-import {DrawerLayoutAndroid, FlatList, View, Text, TouchableOpacity} from 'react-native';
+import {List} from 'react-native-paper'
+import {FlatList, View, Text, TouchableOpacity} from 'react-native';
 import {withCameraPermissionsAndResultNavigator} from '../enhancers';
-import styles, {gray, purple} from '../styles';
+import styles, {purple} from '../styles';
 import Loading from './Loading';
 import MenuDrawer from './MenuDrawer';
 

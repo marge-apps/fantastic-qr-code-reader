@@ -1,4 +1,4 @@
-import {compose, withStateHandlers, withProps, lifecycle} from 'recompose';
+import {withStateHandlers} from 'recompose';
 
 export default withStateHandlers(
 	() => ({

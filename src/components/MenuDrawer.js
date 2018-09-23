@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, DrawerLayoutAndroid, Text, Image} from 'react-native';
+import {View, DrawerLayoutAndroid, Image} from 'react-native';
 import {Appbar, Drawer, Title} from 'react-native-paper'
 import {purple} from '../styles'
 import logo from '../../logo-small.png'
