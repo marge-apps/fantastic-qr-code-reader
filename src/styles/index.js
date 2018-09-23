@@ -4,9 +4,15 @@ import {
 
 export const purple = '#4B0082';
 export const gray = '#cccccc';
+export const orange = '#fb6542';
 export const statusColor = '#2c004d';
 
 const styles = StyleSheet.create({
+	menuButton: {
+		color: 'white',
+		paddingLeft: 10,
+		fontSize: 26,
+	},
 	container: {
 		flex: 1,
 		backgroundColor: '#fff',
@@ -18,7 +24,7 @@ const styles = StyleSheet.create({
 	result: {
 		flex: 1,
 		alignItems: 'center',
-		justifyContent: 'space-around'
+		justifyContent: 'flex-start'
 	},
 	actionButtonIcon: {
 		fontSize: 20,

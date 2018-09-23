@@ -9,17 +9,21 @@ const generateId = () => {
 export default withProps(props => ({
 	handleBarcodeRead: async result => {
 		if (result.data !== props.barcodeResult) {
-				try {
-					await props.navigation.state.params.saveItem(generateId(), result.data);
-					LayoutAnimation.spring();
-					props.setBarcodeResult(result.data);
-					props.navigation.replace('Result', {
-						onNavigateBack: props.navigation.state.params.updateHistory(),
-						result: result.data
-					});
-				} catch (error) {
-					console.log(error)
-				}
+			try {
+				const key = generateId();
+				await props.saveItem(key, result.data);
+				LayoutAnimation.spring();
+
+				props.history.push({
+					pathname: `/result`,
+					state: {
+						text: result.data,
+						key: key
+					}
+				})
+			} catch (error) {
+				console.log(error)
+			}
 		}
 	},
 	copyToClipBoard: async () => {
