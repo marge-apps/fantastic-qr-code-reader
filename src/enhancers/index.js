@@ -2,10 +2,12 @@ import withCameraPermissionsAndResultNavigator from './withCameraPermissionsAndR
 import withStorageHandlers from './withStorageHandlers'
 import withResultPageHandlers from './withResultPageHandlers'
 import withHomePageStateHandlers from './withHomePageStateHandlers'
+import withNiceDate from './withNiceDate'
 
 export {
 	withCameraPermissionsAndResultNavigator,
 	withStorageHandlers,
 	withResultPageHandlers,
-	withHomePageStateHandlers
+	withHomePageStateHandlers,
+	withNiceDate
 }

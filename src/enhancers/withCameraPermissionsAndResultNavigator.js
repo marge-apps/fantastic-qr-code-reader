@@ -12,18 +12,15 @@ export default withProps(props => ({
 				}
 			)
 			if (granted === PermissionsAndroid.RESULTS.GRANTED) {
-				props.navigation.navigate('Camera', {
-					onNavigateBack: props.updateHistory(),
-					...props
-				});
+				props.history.push('/');
 			}
 		} catch (err) {
 			console.warn(err)
 		}
 	},
-	goToResult: text => {
-		if (text !== '') {
-			props.navigation.navigate('Result', {result: text})
+	goToResult: item => {
+		if (item.text !== '') {
+			props.history.push({pathname: `/result`, state: item})
 		}
 	}
 }))

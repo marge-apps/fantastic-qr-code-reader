@@ -1,8 +1,9 @@
 import React from 'react';
-import {TouchableOpacity} from 'react-native';
+import {TouchableOpacity, View, Text} from 'react-native';
 import {compose, withStateHandlers} from 'recompose';
 import Icon from 'react-native-vector-icons/Ionicons';
 import {RNCamera} from 'react-native-camera';
+import MenuDrawer from './MenuDrawer'
 import {withResultPageHandlers} from '../enhancers';
 import styles from '../styles'
 
@@ -12,6 +13,10 @@ const flashModeOrder = {
 };
 
 const CameraPage = props => (
+	<MenuDrawer
+		{...props}
+		title="Camera"
+		activeItem="camera">
 	<RNCamera
 		onBarCodeRead={props.handleBarcodeRead}
 		flashMode={props.flash}
@@ -31,6 +36,7 @@ const CameraPage = props => (
 			}} />
 		</TouchableOpacity>
 	</RNCamera>
+	</MenuDrawer>
 );
 
 const withCameraHandlers = withStateHandlers(
