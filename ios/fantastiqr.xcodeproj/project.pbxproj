@@ -11,7 +11,8 @@
 		00C302E81ABCBA2D00DB3ED1 /* libRCTImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302C01ABCB91800DB3ED1 /* libRCTImage.a */; };
 		00C302E91ABCBA2D00DB3ED1 /* libRCTNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302DC1ABCB9D200DB3ED1 /* libRCTNetwork.a */; };
 		00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302E41ABCB9EE00DB3ED1 /* libRCTVibration.a */; };
-		00E356F31AD99517003FC87E /* FantasticQrCodeReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* FantasticQrCodeReaderTests.m */; };
+		00E356F31AD99517003FC87E /* fantastiqrTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* fantastiqrTests.m */; };
+		11D1A2F320CAFA9E000508D9 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C398B91ACF4ADC00677621 /* libRCTLinking.a */; };
 		139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139105C11AF99BAD00B5F7CC /* libRCTSettings.a */; };
 		139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139FDEF41B06529B00C62182 /* libRCTWebSocket.a */; };
@@ -32,24 +33,23 @@
 		2D02E4C71E0B4AEC006451C7 /* libRCTText-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3E941DF850E9000B6D8A /* libRCTText-tvOS.a */; };
 		2D02E4C81E0B4AEC006451C7 /* libRCTWebSocket-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3E991DF850E9000B6D8A /* libRCTWebSocket-tvOS.a */; };
 		2D16E6881FA4F8E400B85C8A /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D16E6891FA4F8E400B85C8A /* libReact.a */; };
-		2DCD954D1E0B4F2C00145EB5 /* FantasticQrCodeReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* FantasticQrCodeReaderTests.m */; };
+		2DCD954D1E0B4F2C00145EB5 /* fantastiqrTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* fantastiqrTests.m */; };
 		2DF0FFEE2056DD460020B375 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
-		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
-		DC37FAAE89A24CEBBD73B023 /* libRNCamera.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CA810B03F664540BD87D24F /* libRNCamera.a */; };
-		2A672D34FB6E4E828F772108 /* libRNVectorIcons.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 637784D7315241E8A07D56F5 /* libRNVectorIcons.a */; };
-		740C713A189B44F7A665C5C4 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9CAAE785DC6844EC94148A65 /* Entypo.ttf */; };
-		BED916243E714974AC419F20 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4518DEB928C744CB92B476A7 /* EvilIcons.ttf */; };
-		BC54F1FE41D34A75BEEB4B7F /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C31015291F5A4765AB0E1FAE /* Feather.ttf */; };
-		0D6C8255B40B4D709B3C8F77 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E0A7AF922BDF4A59B8111A74 /* FontAwesome.ttf */; };
-		5AE59DAF586242D4929C3E06 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 218C376707394339A2413FA2 /* Foundation.ttf */; };
-		9B2440B1D7044D008F9063BA /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 01041CC3A5B34B48A5E2E8E0 /* Ionicons.ttf */; };
-		14B5C61DE26F40B7BA04F734 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 894FB9C9A43E4504903E3ECD /* MaterialCommunityIcons.ttf */; };
-		606FC8CAFC67475B9C4BC5FB /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A72D5DA78FCC4DE39C119F6C /* MaterialIcons.ttf */; };
-		ECFFB99BB68143F6870ADBEE /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 588A198E0C5E47DEA4388CB5 /* Octicons.ttf */; };
-		A0CF25E4208F4D219D482593 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4F92DA526D9945589522F7CD /* SimpleLineIcons.ttf */; };
-		66A3574686804BCC9AC1BDC5 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1592EAB243894C178868626E /* Zocial.ttf */; };
+		606E3E90D33941BB84BBD5BD /* libRNCamera.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 90C6D3BD83BE4C0BA1465AE8 /* libRNCamera.a */; };
+		E04D5C42318747C5B88F05CD /* libRNVectorIcons.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E18299F4F962454CA11F3EF2 /* libRNVectorIcons.a */; };
+		1C73C6CDBA364CE89F9EBF0D /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD2D35941A524261A579FEE3 /* Entypo.ttf */; };
+		99E7DFB68DDC45508CCD66B3 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88A198282EA94F478DC0F856 /* EvilIcons.ttf */; };
+		D75CDE7D93644042A2A960FB /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 20AACF4743714963B90C9F13 /* Feather.ttf */; };
+		0B63F482CEEC4DD981EE5846 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8350A7387D114432807AFC40 /* FontAwesome.ttf */; };
+		47198D9DA2A845B8B335D189 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7B0C528A415643CFBD35C3EC /* Foundation.ttf */; };
+		7B1AEEBECAA74D2C9AE57B98 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0D254076812E43B286ADB27A /* Ionicons.ttf */; };
+		3AD79EAC03364CD89469B2D2 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 20614A8AC0AF4C2DB1783CC2 /* MaterialCommunityIcons.ttf */; };
+		BE66C6B285244FAAAF5F6811 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5D39664D2D904B69BF74E692 /* MaterialIcons.ttf */; };
+		202C0502055D46B09D2E73B9 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 44F2F76301BB4343A7F1F98B /* Octicons.ttf */; };
+		3933ACA0DC0245D79099ECF0 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC003FEEFE764E6CB29CBD5C /* SimpleLineIcons.ttf */; };
+		20901AD87F734C22A3FB4BF0 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9A5D9EA4374C40BDBBC5AE96 /* Zocial.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,7 +93,7 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = FantasticQrCodeReader;
+			remoteInfo = fantastiqr;
 		};
 		139105C01AF99BAD00B5F7CC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -121,7 +121,7 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
-			remoteInfo = "FantasticQrCodeReader-tvOS";
+			remoteInfo = "fantastiqr-tvOS";
 		};
 		2D16E6711FA4F8DC00B85C8A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -335,41 +335,41 @@
 		00C302BB1ABCB91800DB3ED1 /* RCTImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTImage.xcodeproj; path = "../node_modules/react-native/Libraries/Image/RCTImage.xcodeproj"; sourceTree = "<group>"; };
 		00C302D31ABCB9D200DB3ED1 /* RCTNetwork.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTNetwork.xcodeproj; path = "../node_modules/react-native/Libraries/Network/RCTNetwork.xcodeproj"; sourceTree = "<group>"; };
 		00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTVibration.xcodeproj; path = "../node_modules/react-native/Libraries/Vibration/RCTVibration.xcodeproj"; sourceTree = "<group>"; };
-		00E356EE1AD99517003FC87E /* FantasticQrCodeReaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FantasticQrCodeReaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* fantastiqrTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fantastiqrTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* FantasticQrCodeReaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FantasticQrCodeReaderTests.m; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* fantastiqrTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = fantastiqrTests.m; sourceTree = "<group>"; };
 		139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSettings.xcodeproj; path = "../node_modules/react-native/Libraries/Settings/RCTSettings.xcodeproj"; sourceTree = "<group>"; };
 		139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "../node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* FantasticQrCodeReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FantasticQrCodeReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = FantasticQrCodeReader/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = FantasticQrCodeReader/AppDelegate.m; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* fantastiqr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fantastiqr.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = fantastiqr/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = fantastiqr/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = FantasticQrCodeReader/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = FantasticQrCodeReader/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = FantasticQrCodeReader/main.m; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = fantastiqr/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = fantastiqr/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = fantastiqr/main.m; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
-		2D02E47B1E0B4A5D006451C7 /* FantasticQrCodeReader-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FantasticQrCodeReader-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D02E4901E0B4A5D006451C7 /* FantasticQrCodeReader-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FantasticQrCodeReader-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02E47B1E0B4A5D006451C7 /* fantastiqr-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "fantastiqr-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02E4901E0B4A5D006451C7 /* fantastiqr-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "fantastiqr-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
-		6F172CA3775E40F899C12828 /* RNCamera.xcodeproj */ = {isa = PBXFileReference; name = "RNCamera.xcodeproj"; path = "../node_modules/react-native-camera/ios/RNCamera.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
-		6CA810B03F664540BD87D24F /* libRNCamera.a */ = {isa = PBXFileReference; name = "libRNCamera.a"; path = "libRNCamera.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
-		01E386A7158340B6A5AE0787 /* RNVectorIcons.xcodeproj */ = {isa = PBXFileReference; name = "RNVectorIcons.xcodeproj"; path = "../node_modules/react-native-vector-icons/RNVectorIcons.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
-		637784D7315241E8A07D56F5 /* libRNVectorIcons.a */ = {isa = PBXFileReference; name = "libRNVectorIcons.a"; path = "libRNVectorIcons.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
-		9CAAE785DC6844EC94148A65 /* Entypo.ttf */ = {isa = PBXFileReference; name = "Entypo.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		4518DEB928C744CB92B476A7 /* EvilIcons.ttf */ = {isa = PBXFileReference; name = "EvilIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		C31015291F5A4765AB0E1FAE /* Feather.ttf */ = {isa = PBXFileReference; name = "Feather.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		E0A7AF922BDF4A59B8111A74 /* FontAwesome.ttf */ = {isa = PBXFileReference; name = "FontAwesome.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		218C376707394339A2413FA2 /* Foundation.ttf */ = {isa = PBXFileReference; name = "Foundation.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		01041CC3A5B34B48A5E2E8E0 /* Ionicons.ttf */ = {isa = PBXFileReference; name = "Ionicons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		894FB9C9A43E4504903E3ECD /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; name = "MaterialCommunityIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		A72D5DA78FCC4DE39C119F6C /* MaterialIcons.ttf */ = {isa = PBXFileReference; name = "MaterialIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		588A198E0C5E47DEA4388CB5 /* Octicons.ttf */ = {isa = PBXFileReference; name = "Octicons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		4F92DA526D9945589522F7CD /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; name = "SimpleLineIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		1592EAB243894C178868626E /* Zocial.ttf */ = {isa = PBXFileReference; name = "Zocial.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2F87669EECFE4B32A3766B39 /* RNCamera.xcodeproj */ = {isa = PBXFileReference; name = "RNCamera.xcodeproj"; path = "../node_modules/react-native-camera/ios/RNCamera.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		90C6D3BD83BE4C0BA1465AE8 /* libRNCamera.a */ = {isa = PBXFileReference; name = "libRNCamera.a"; path = "libRNCamera.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		34EE379AC6F746AAA216E33F /* RNVectorIcons.xcodeproj */ = {isa = PBXFileReference; name = "RNVectorIcons.xcodeproj"; path = "../node_modules/react-native-vector-icons/RNVectorIcons.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		E18299F4F962454CA11F3EF2 /* libRNVectorIcons.a */ = {isa = PBXFileReference; name = "libRNVectorIcons.a"; path = "libRNVectorIcons.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		BD2D35941A524261A579FEE3 /* Entypo.ttf */ = {isa = PBXFileReference; name = "Entypo.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		88A198282EA94F478DC0F856 /* EvilIcons.ttf */ = {isa = PBXFileReference; name = "EvilIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		20AACF4743714963B90C9F13 /* Feather.ttf */ = {isa = PBXFileReference; name = "Feather.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8350A7387D114432807AFC40 /* FontAwesome.ttf */ = {isa = PBXFileReference; name = "FontAwesome.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7B0C528A415643CFBD35C3EC /* Foundation.ttf */ = {isa = PBXFileReference; name = "Foundation.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0D254076812E43B286ADB27A /* Ionicons.ttf */ = {isa = PBXFileReference; name = "Ionicons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		20614A8AC0AF4C2DB1783CC2 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; name = "MaterialCommunityIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5D39664D2D904B69BF74E692 /* MaterialIcons.ttf */ = {isa = PBXFileReference; name = "MaterialIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		44F2F76301BB4343A7F1F98B /* Octicons.ttf */ = {isa = PBXFileReference; name = "Octicons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		BC003FEEFE764E6CB29CBD5C /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; name = "SimpleLineIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9A5D9EA4374C40BDBBC5AE96 /* Zocial.ttf */ = {isa = PBXFileReference; name = "Zocial.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -386,9 +386,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */,
-				5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */,
+				11D1A2F320CAFA9E000508D9 /* libRCTAnimation.a in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
-				5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */,
 				00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */,
 				00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */,
 				00C302E81ABCBA2D00DB3ED1 /* libRCTImage.a in Frameworks */,
@@ -398,8 +397,8 @@
 				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
-				DC37FAAE89A24CEBBD73B023 /* libRNCamera.a in Frameworks */,
-				2A672D34FB6E4E828F772108 /* libRNVectorIcons.a in Frameworks */,
+				606E3E90D33941BB84BBD5BD /* libRNCamera.a in Frameworks */,
+				E04D5C42318747C5B88F05CD /* libRNVectorIcons.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,13 +470,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		00E356EF1AD99517003FC87E /* FantasticQrCodeReaderTests */ = {
+		00E356EF1AD99517003FC87E /* fantastiqrTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* FantasticQrCodeReaderTests.m */,
+				00E356F21AD99517003FC87E /* fantastiqrTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = FantasticQrCodeReaderTests;
+			path = fantastiqrTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -508,7 +507,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* FantasticQrCodeReader */ = {
+		13B07FAE1A68108700A75B9A /* fantastiqr */ = {
 			isa = PBXGroup;
 			children = (
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
@@ -519,7 +518,7 @@
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = FantasticQrCodeReader;
+			name = fantastiqr;
 			sourceTree = "<group>";
 		};
 		146834001AC3E56700842450 /* Products */ = {
@@ -586,8 +585,8 @@
 				832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */,
 				00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */,
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
-				6F172CA3775E40F899C12828 /* RNCamera.xcodeproj */,
-				01E386A7158340B6A5AE0787 /* RNVectorIcons.xcodeproj */,
+				2F87669EECFE4B32A3766B39 /* RNCamera.xcodeproj */,
+				34EE379AC6F746AAA216E33F /* RNVectorIcons.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -604,12 +603,12 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* FantasticQrCodeReader */,
+				13B07FAE1A68108700A75B9A /* fantastiqr */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* FantasticQrCodeReaderTests */,
+				00E356EF1AD99517003FC87E /* fantastiqrTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				8D3A315F0E33482F9BE17C72 /* Resources */,
+				4DA04BCD9D794E11B2EB166B /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -619,10 +618,10 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* FantasticQrCodeReader.app */,
-				00E356EE1AD99517003FC87E /* FantasticQrCodeReaderTests.xctest */,
-				2D02E47B1E0B4A5D006451C7 /* FantasticQrCodeReader-tvOS.app */,
-				2D02E4901E0B4A5D006451C7 /* FantasticQrCodeReader-tvOSTests.xctest */,
+				13B07F961A680F5B00A75B9A /* fantastiqr.app */,
+				00E356EE1AD99517003FC87E /* fantastiqrTests.xctest */,
+				2D02E47B1E0B4A5D006451C7 /* fantastiqr-tvOS.app */,
+				2D02E4901E0B4A5D006451C7 /* fantastiqr-tvOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -636,20 +635,20 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8D3A315F0E33482F9BE17C72 /* Resources */ = {
+		4DA04BCD9D794E11B2EB166B /* Resources */ = {
 			isa = "PBXGroup";
 			children = (
-				9CAAE785DC6844EC94148A65 /* Entypo.ttf */,
-				4518DEB928C744CB92B476A7 /* EvilIcons.ttf */,
-				C31015291F5A4765AB0E1FAE /* Feather.ttf */,
-				E0A7AF922BDF4A59B8111A74 /* FontAwesome.ttf */,
-				218C376707394339A2413FA2 /* Foundation.ttf */,
-				01041CC3A5B34B48A5E2E8E0 /* Ionicons.ttf */,
-				894FB9C9A43E4504903E3ECD /* MaterialCommunityIcons.ttf */,
-				A72D5DA78FCC4DE39C119F6C /* MaterialIcons.ttf */,
-				588A198E0C5E47DEA4388CB5 /* Octicons.ttf */,
-				4F92DA526D9945589522F7CD /* SimpleLineIcons.ttf */,
-				1592EAB243894C178868626E /* Zocial.ttf */,
+				BD2D35941A524261A579FEE3 /* Entypo.ttf */,
+				88A198282EA94F478DC0F856 /* EvilIcons.ttf */,
+				20AACF4743714963B90C9F13 /* Feather.ttf */,
+				8350A7387D114432807AFC40 /* FontAwesome.ttf */,
+				7B0C528A415643CFBD35C3EC /* Foundation.ttf */,
+				0D254076812E43B286ADB27A /* Ionicons.ttf */,
+				20614A8AC0AF4C2DB1783CC2 /* MaterialCommunityIcons.ttf */,
+				5D39664D2D904B69BF74E692 /* MaterialIcons.ttf */,
+				44F2F76301BB4343A7F1F98B /* Octicons.ttf */,
+				BC003FEEFE764E6CB29CBD5C /* SimpleLineIcons.ttf */,
+				9A5D9EA4374C40BDBBC5AE96 /* Zocial.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -658,9 +657,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* FantasticQrCodeReaderTests */ = {
+		00E356ED1AD99517003FC87E /* fantastiqrTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "FantasticQrCodeReaderTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "fantastiqrTests" */;
 			buildPhases = (
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
@@ -671,14 +670,14 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = FantasticQrCodeReaderTests;
-			productName = FantasticQrCodeReaderTests;
-			productReference = 00E356EE1AD99517003FC87E /* FantasticQrCodeReaderTests.xctest */;
+			name = fantastiqrTests;
+			productName = fantastiqrTests;
+			productReference = 00E356EE1AD99517003FC87E /* fantastiqrTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* FantasticQrCodeReader */ = {
+		13B07F861A680F5B00A75B9A /* fantastiqr */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "FantasticQrCodeReader" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "fantastiqr" */;
 			buildPhases = (
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
@@ -689,14 +688,14 @@
 			);
 			dependencies = (
 			);
-			name = FantasticQrCodeReader;
+			name = fantastiqr;
 			productName = "Hello World";
-			productReference = 13B07F961A680F5B00A75B9A /* FantasticQrCodeReader.app */;
+			productReference = 13B07F961A680F5B00A75B9A /* fantastiqr.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E47A1E0B4A5D006451C7 /* FantasticQrCodeReader-tvOS */ = {
+		2D02E47A1E0B4A5D006451C7 /* fantastiqr-tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "FantasticQrCodeReader-tvOS" */;
+			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "fantastiqr-tvOS" */;
 			buildPhases = (
 				2D02E4771E0B4A5D006451C7 /* Sources */,
 				2D02E4781E0B4A5D006451C7 /* Frameworks */,
@@ -707,14 +706,14 @@
 			);
 			dependencies = (
 			);
-			name = "FantasticQrCodeReader-tvOS";
-			productName = "FantasticQrCodeReader-tvOS";
-			productReference = 2D02E47B1E0B4A5D006451C7 /* FantasticQrCodeReader-tvOS.app */;
+			name = "fantastiqr-tvOS";
+			productName = "fantastiqr-tvOS";
+			productReference = 2D02E47B1E0B4A5D006451C7 /* fantastiqr-tvOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E48F1E0B4A5D006451C7 /* FantasticQrCodeReader-tvOSTests */ = {
+		2D02E48F1E0B4A5D006451C7 /* fantastiqr-tvOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "FantasticQrCodeReader-tvOSTests" */;
+			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "fantastiqr-tvOSTests" */;
 			buildPhases = (
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
 				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
@@ -725,9 +724,9 @@
 			dependencies = (
 				2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */,
 			);
-			name = "FantasticQrCodeReader-tvOSTests";
-			productName = "FantasticQrCodeReader-tvOSTests";
-			productReference = 2D02E4901E0B4A5D006451C7 /* FantasticQrCodeReader-tvOSTests.xctest */;
+			name = "fantastiqr-tvOSTests";
+			productName = "fantastiqr-tvOSTests";
+			productReference = 2D02E4901E0B4A5D006451C7 /* fantastiqr-tvOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -736,7 +735,7 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 610;
+				LastUpgradeCheck = 940;
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
@@ -754,7 +753,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "FantasticQrCodeReader" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "fantastiqr" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -817,10 +816,10 @@
 			);
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* FantasticQrCodeReader */,
-				00E356ED1AD99517003FC87E /* FantasticQrCodeReaderTests */,
-				2D02E47A1E0B4A5D006451C7 /* FantasticQrCodeReader-tvOS */,
-				2D02E48F1E0B4A5D006451C7 /* FantasticQrCodeReader-tvOSTests */,
+				13B07F861A680F5B00A75B9A /* fantastiqr */,
+				00E356ED1AD99517003FC87E /* fantastiqrTests */,
+				2D02E47A1E0B4A5D006451C7 /* fantastiqr-tvOS */,
+				2D02E48F1E0B4A5D006451C7 /* fantastiqr-tvOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -1101,17 +1100,17 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
-				740C713A189B44F7A665C5C4 /* Entypo.ttf in Resources */,
-				BED916243E714974AC419F20 /* EvilIcons.ttf in Resources */,
-				BC54F1FE41D34A75BEEB4B7F /* Feather.ttf in Resources */,
-				0D6C8255B40B4D709B3C8F77 /* FontAwesome.ttf in Resources */,
-				5AE59DAF586242D4929C3E06 /* Foundation.ttf in Resources */,
-				9B2440B1D7044D008F9063BA /* Ionicons.ttf in Resources */,
-				14B5C61DE26F40B7BA04F734 /* MaterialCommunityIcons.ttf in Resources */,
-				606FC8CAFC67475B9C4BC5FB /* MaterialIcons.ttf in Resources */,
-				ECFFB99BB68143F6870ADBEE /* Octicons.ttf in Resources */,
-				A0CF25E4208F4D219D482593 /* SimpleLineIcons.ttf in Resources */,
-				66A3574686804BCC9AC1BDC5 /* Zocial.ttf in Resources */,
+				1C73C6CDBA364CE89F9EBF0D /* Entypo.ttf in Resources */,
+				99E7DFB68DDC45508CCD66B3 /* EvilIcons.ttf in Resources */,
+				D75CDE7D93644042A2A960FB /* Feather.ttf in Resources */,
+				0B63F482CEEC4DD981EE5846 /* FontAwesome.ttf in Resources */,
+				47198D9DA2A845B8B335D189 /* Foundation.ttf in Resources */,
+				7B1AEEBECAA74D2C9AE57B98 /* Ionicons.ttf in Resources */,
+				3AD79EAC03364CD89469B2D2 /* MaterialCommunityIcons.ttf in Resources */,
+				BE66C6B285244FAAAF5F6811 /* MaterialIcons.ttf in Resources */,
+				202C0502055D46B09D2E73B9 /* Octicons.ttf in Resources */,
+				3933ACA0DC0245D79099ECF0 /* SimpleLineIcons.ttf in Resources */,
+				20901AD87F734C22A3FB4BF0 /* Zocial.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1168,7 +1167,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* FantasticQrCodeReaderTests.m in Sources */,
+				00E356F31AD99517003FC87E /* fantastiqrTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1194,7 +1193,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DCD954D1E0B4F2C00145EB5 /* FantasticQrCodeReaderTests.m in Sources */,
+				2DCD954D1E0B4F2C00145EB5 /* fantastiqrTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1203,12 +1202,12 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* FantasticQrCodeReader */;
+			target = 13B07F861A680F5B00A75B9A /* fantastiqr */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 		2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2D02E47A1E0B4A5D006451C7 /* FantasticQrCodeReader-tvOS */;
+			target = 2D02E47A1E0B4A5D006451C7 /* fantastiqr-tvOS */;
 			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1220,7 +1219,7 @@
 				13B07FB21A68108700A75B9A /* Base */,
 			);
 			name = LaunchScreen.xib;
-			path = FantasticQrCodeReader;
+			path = fantastiqr;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -1234,15 +1233,16 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = FantasticQrCodeReaderTests/Info.plist;
+				INFOPLIST_FILE = fantastiqrTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FantasticQrCodeReader.app/FantasticQrCodeReader";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fantastiqr.app/fantastiqr";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
@@ -1261,15 +1261,16 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = FantasticQrCodeReaderTests/Info.plist;
+				INFOPLIST_FILE = fantastiqrTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FantasticQrCodeReader.app/FantasticQrCodeReader";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fantastiqr.app/fantastiqr";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
@@ -1289,14 +1290,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
-				INFOPLIST_FILE = FantasticQrCodeReader/Info.plist;
+				INFOPLIST_FILE = fantastiqr/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_NAME = FantasticQrCodeReader;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = fantastiqr;
 				VERSIONING_SYSTEM = "apple-generic";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1311,14 +1313,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_FILE = FantasticQrCodeReader/Info.plist;
+				INFOPLIST_FILE = fantastiqr/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_NAME = FantasticQrCodeReader;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = fantastiqr;
 				VERSIONING_SYSTEM = "apple-generic";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1340,13 +1343,13 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "FantasticQrCodeReader-tvOS/Info.plist";
+				INFOPLIST_FILE = "fantastiqr-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.FantasticQrCodeReader-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.fantastiqr-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -1376,13 +1379,13 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "FantasticQrCodeReader-tvOS/Info.plist";
+				INFOPLIST_FILE = "fantastiqr-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.FantasticQrCodeReader-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.fantastiqr-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -1411,16 +1414,16 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "FantasticQrCodeReader-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "fantastiqr-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.FantasticQrCodeReader-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.fantastiqr-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FantasticQrCodeReader-tvOS.app/FantasticQrCodeReader-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fantastiqr-tvOS.app/fantastiqr-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1446,16 +1449,16 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "FantasticQrCodeReader-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "fantastiqr-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.FantasticQrCodeReader-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.fantastiqr-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FantasticQrCodeReader-tvOS.app/FantasticQrCodeReader-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fantastiqr-tvOS.app/fantastiqr-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1478,20 +1481,32 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -1519,13 +1534,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -1533,6 +1558,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -1549,7 +1575,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "FantasticQrCodeReaderTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "fantastiqrTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -1558,7 +1584,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "FantasticQrCodeReader" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "fantastiqr" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -1567,7 +1593,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "FantasticQrCodeReader-tvOS" */ = {
+		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "fantastiqr-tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4971E0B4A5E006451C7 /* Debug */,
@@ -1576,7 +1602,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "FantasticQrCodeReader-tvOSTests" */ = {
+		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "fantastiqr-tvOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4991E0B4A5E006451C7 /* Debug */,
@@ -1585,7 +1611,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "FantasticQrCodeReader" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "fantastiqr" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
