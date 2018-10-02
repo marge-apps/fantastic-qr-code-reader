@@ -33,9 +33,9 @@ const NavigationView = props => (
 	</View>
 
 	<DrawerItem
-		label="Camera"
+		label="Scan"
 		icon="camera"
-		active={props.activeItem === 'camera'}
+		active={props.activeItem === 'scan'}
 		onClick={() => {
 			props.closeDrawer()
 			if (props.history.location.pathname !== '/') {

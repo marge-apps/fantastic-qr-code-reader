@@ -1,11 +1,8 @@
 import React from 'react';
 import {lifecycle, compose, branch, withProps, renderComponent} from 'recompose';
-import ActionButton from 'react-native-action-button';
 import Icon from 'react-native-vector-icons/Ionicons';
 import {List} from 'react-native-paper'
 import {FlatList, View, Text, TouchableOpacity} from 'react-native';
-import {withCameraPermissionsAndResultNavigator} from '../enhancers';
-import styles, {purple} from '../styles';
 import Loading from './Loading';
 import MenuDrawer from './MenuDrawer';
 
@@ -50,7 +47,7 @@ const Empty = props => (
 			No history
 		</Text>
 		<Text style={{paddingTop: 8}}>
-			You could start adding by tapping the camera button.
+			You could start adding by using this camera page
 		</Text>
 	</View>
 )
@@ -106,19 +103,12 @@ const initializeList = lifecycle({
 
 export default compose(
 	initializeList,
-	withProps(props => ({list})),
-	withCameraPermissionsAndResultNavigator
+	withProps(props => ({list}))
 )(props => (
 	<MenuDrawer
 		{...props}
 		title="History"
 		activeItem="history">
 		<MyList {...props}/>
-		<ActionButton
-			buttonColor={purple}
-			title="Scan"
-			renderIcon={() => <Icon name="md-camera" style={styles.actionButtonIcon} />}
-			onPress={props.askCameraPermission}
-		/>
 	</MenuDrawer>
 ));

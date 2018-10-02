@@ -1,15 +1,17 @@
 {
-  "name": "FantasticQrCodeReader",
+  "name": "fantastiqr",
   "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
+		"android": "react-native run-android",
     "test": "jest"
   },
   "dependencies": {
     "react": "16.5.0",
     "react-native": "0.57.1",
     "react-native-action-button": "^2.8.5",
+    "react-native-android-open-settings": "^1.0.1",
     "react-native-camera": "^1.2.0",
     "react-native-paper": "^2.0.1",
     "react-native-qrcode": "^0.2.7",

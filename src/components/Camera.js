@@ -1,9 +1,11 @@
 import React from 'react';
-import {TouchableOpacity} from 'react-native';
+import {TouchableOpacity, View, Text, Linking, AppState} from 'react-native';
 import {compose, withStateHandlers} from 'recompose';
+import AndroidOpenSettings from 'react-native-android-open-settings'
 import Icon from 'react-native-vector-icons/Ionicons';
 import {RNCamera} from 'react-native-camera';
-import MenuDrawer from './MenuDrawer'
+import {purple} from '../styles';
+import MenuDrawer from './MenuDrawer';
 import {withResultPageHandlers} from '../enhancers';
 
 const flashModeOrder = {
@@ -11,14 +13,37 @@ const flashModeOrder = {
 	torch: 'off'
 };
 
+const NotAuthorizedView = () => (
+	<View style={{
+		flex: 1,
+		alignItems: 'center',
+		justifyContent: 'center'
+	}}>
+		<View style={{paddingBottom: 20}}>
+			<Icon
+				name="md-camera"
+				type="entypo"
+				size={36}
+			/>
+		</View>
+		<Text style={{textAlign: 'center'}}>
+			In order to scan QR codes we need to access your camera.
+		</Text>
+		<Text style={{color: purple}} onPress={AndroidOpenSettings.appDetailsSettings}>
+			Go to Application settings
+		</Text>
+	</View>
+)
+
 const CameraPage = props => (
 	<MenuDrawer
 		{...props}
-		title="Camera"
-		activeItem="camera">
+		title="Scan"
+		activeItem="scan">
 	<RNCamera
 		onBarCodeRead={props.handleBarcodeRead}
 		flashMode={props.flash}
+		notAuthorizedView={<NotAuthorizedView {...props}/>}
 		style={{
 			flex: 1,
 		}}>
@@ -41,9 +66,11 @@ const CameraPage = props => (
 const withCameraHandlers = withStateHandlers(
 	() => ({
 		barcodeResult: '' ,
-		flash: 'off'
+		flash: 'off',
+		appState: AppState.currentState
 	}),
 	{
+		refresh: () => () => ({}),
 		setBarcodeResult: () => value => ({barcodeResult: value}),
 		toggleFlash: ({flash}) => () => ({flash: flashModeOrder[flash]})
 	}
