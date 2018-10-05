@@ -5,6 +5,7 @@ import {List} from 'react-native-paper'
 import {FlatList, View, Text, TouchableOpacity} from 'react-native';
 import Loading from './Loading';
 import MenuDrawer from './MenuDrawer';
+import {withCameraPermissionsAndResultNavigator} from '../enhancers';
 
 const CreationTime = ({id, niceDate}) => (
 	<View style={{
@@ -47,7 +48,7 @@ const Empty = props => (
 			No history
 		</Text>
 		<Text style={{paddingTop: 8}}>
-			You could start adding by using this camera page
+			You could start adding by using the camera page
 		</Text>
 	</View>
 )
@@ -103,6 +104,7 @@ const initializeList = lifecycle({
 
 export default compose(
 	initializeList,
+	withCameraPermissionsAndResultNavigator,
 	withProps(props => ({list}))
 )(props => (
 	<MenuDrawer

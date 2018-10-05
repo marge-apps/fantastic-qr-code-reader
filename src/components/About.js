@@ -17,7 +17,7 @@ export default props => (
 		<View>
 			<Image source={marge} resizeMode="center" />
 		</View>
-		<View style={{alignItems: 'center', textAlign: 'center'}}>
+		<View style={{alignItems: 'center', textAlign: 'center', padding: 20}}>
 			<Text style={{textAlign: 'center', marginBottom: 6}}>
 				We are two developers crafting open source projects for fun and maybe profit.
 			</Text>

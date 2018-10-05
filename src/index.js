@@ -15,11 +15,11 @@ export default compose(
 		<BackButton>
 			<View style={{ flex: 1 }}>
 				<StatusBar backgroundColor={statusColor} barStyle="light-content" />
-			<Route exact path="/" render={routerProps => <Camera {...routerProps} {...props}/>}/>
+				<Route exact path="/" render={routerProps => <Camera {...routerProps} {...props}/>}/>
 				<Route exact path="/history" render={routerProps => <QrList {...routerProps} {...props}/>}/>
-			<Route exact path="/about" render={routerProps => <About {...routerProps} {...props}/>}/>
-			<Route exact path="/result" render={routerProps => <Result {...routerProps} {...props}/>}/>
-		</View>
-	</BackButton>
-</NativeRouter>
+				<Route exact path="/about" render={routerProps => <About {...routerProps} {...props}/>}/>
+				<Route exact path="/result" render={routerProps => <Result {...routerProps} {...props}/>}/>
+			</View>
+		</BackButton>
+	</NativeRouter>
 ));
